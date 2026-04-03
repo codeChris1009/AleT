@@ -19,6 +19,7 @@ dependencies = [
     "asyncpg>=0.31.0",              # PostgreSQL Async Driver 專為 Postgres 設計的高效能非同步驅動
     "alembic>=1.18.4",              # Database Migrations 資料庫遷移管理，紀錄資料表結構變更
     "greenlet>=3.3.2",              # SQLAlchemy Async Helper 輔助 SQLAlchemy 處理非同步協程切換
+    "pgvector>=0.3.6",               # pgvector Python Binding 提供 SQLAlchemy 向量欄位型別與相似度查詢
     # ======= Redis & Caching 快取與分散式鎖 =======
     "redis[hiredis]>=7.4.0",        # Redis Client 負責快取、限流與高性能數據解析的，使用 C 擴展提升性能
     # ======= Network & Resiliency 網路通訊與容錯 =======
@@ -42,7 +43,6 @@ dependencies = [
     "langchain>=0.3.25",             # LLM Framework 大型語言模型應用框架，負責 RAG 流程編排與 Prompt 管理
     "langchain-ollama>=0.3.2",       # Ollama Integration 串接本地 Ollama LLM 推理引擎
     "langchain-postgres>=0.0.14",    # pgvector Integration 讓 LangChain 直接操作 PostgreSQL 向量搜尋
-    "pgvector>=0.3.6",               # pgvector Python Binding 提供 SQLAlchemy 向量欄位型別與相似度查詢
     "mcp>=1.9.4",                    # MCP Client 基於 Model Context Protocol 與 MuTO 技能主機通訊
 ]
 
