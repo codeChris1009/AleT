@@ -44,6 +44,7 @@ dependencies = [
     "langchain-ollama>=0.3.2",       # Ollama Integration 串接本地 Ollama LLM 推理引擎
     "langchain-postgres>=0.0.14",    # pgvector Integration 讓 LangChain 直接操作 PostgreSQL 向量搜尋
     "mcp>=1.9.4",                    # MCP Client 基於 Model Context Protocol 與 MuTO 技能主機通訊
+    "langchain-mcp-adapters>=0.1.2", # MCP Adapter 讓 LangChain 與 MCP Server 無縫相容
 ]
 
 # --- Dependency Groups 開發環境工具 ---
